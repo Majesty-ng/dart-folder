@@ -64,5 +64,3 @@ void main(List<String> args) {
   // print(ages);
 }
 
-//function for finding simple interest
-//
