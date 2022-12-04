@@ -52,6 +52,11 @@ void main(List<String> args) {
 //String lists
   List<String> names = ["wesley" "ugwu"];
   print(names[0]);
+  Set<int> fruits = {1, 2, 3, 4, 5};
+  Set<int> local = {1, 2, 3, 4, 5};
+  print(fruits.first);
+  final differenceSet = fruits.difference(local);
+  print(differenceSet);
   //mixed list
   // var mixed = [10, "john", 18.0];
   // print(mixed[3]);
@@ -63,4 +68,3 @@ void main(List<String> args) {
   // ages.addAll(numb);
   // print(ages);
 }
-
