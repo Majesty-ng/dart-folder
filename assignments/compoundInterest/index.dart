@@ -8,8 +8,11 @@ class SI {
   double? yr;
   double? newval;
   double? compounInterest(
-    //p- (1 + r/n)**nt
-      double? principal, double? rate, double? time, double? yr) {
+      //p- (1 + r/n)**nt
+      double? principal,
+      double? rate,
+      double? time,
+      double? yr) {
     this.principal = principal;
     this.rate = rate;
     this.time = time;
@@ -19,15 +22,15 @@ class SI {
     for (int i = 0; i < time!; i++) {
       retval *= newval!;
     }
-
     return (principal! * retval) - principal;
+    //return principal! * pow((1 + rate / retval), time) - principal;
   }
 }
 
 void main() {
   print(2);
   stdout.write("input interest: ");
-  double? principal =double.parse(stdin.readLineSync()!);
+  double? principal = double.parse(stdin.readLineSync()!);
   stdout.write("input rate: ");
   double? rate = double.parse(stdin.readLineSync()!);
   stdout.write("input time: ");
